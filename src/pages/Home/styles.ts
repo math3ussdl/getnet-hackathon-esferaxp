@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import banner from '../../assets/images/Banner.png';
-import banner2 from '../../assets/images/banner2.png';
 
 export const Container = styled.div`
 	display: flex;
