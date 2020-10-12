@@ -13,7 +13,9 @@ const MicroCredQuiz2: React.FC = () => {
 				text='Boa, continue assim!'
 				image={percent}
 				question='As taxas do microcrédito em relação ao crédito normal são?'
-				options={['A. Maiores.', 'B. Não sei.', 'C. Menores.']}
+        options={['A. Maiores.', 'B. Não sei.', 'C. Menores.']}
+        linkTo='/xp/quiz/microcred-quiz/3'
+        lsName='q2'
 			/>
 		</Container>
 	);

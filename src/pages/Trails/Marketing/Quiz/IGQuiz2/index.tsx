@@ -12,6 +12,8 @@ const IGQuiz2: React.FC = () => {
         text='Boa, continue assim!'
         image={phone}
         question='Usar as redes sociais apenas como um vitrine, somente para anunciar seu produto/serviço é:'
+        linkTo='/xp/quiz/ig-quiz/3'
+        lsName='q2'
       />
     </Container>
   );

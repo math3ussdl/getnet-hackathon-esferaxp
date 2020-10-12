@@ -65,10 +65,10 @@ export const Menu = styled.div`
 			margin: 2rem 0;
 
 			color: var(--color-link);
-			text-decoration: underline;
 
 			&:hover {
 				cursor: pointer;
+        text-decoration: underline;
 			}
 		}
 	}
@@ -95,10 +95,11 @@ export const SantanderBrand = styled.div`
   span {
     > img {
       width: auto;
-      height: auto;
+      height: 1.5rem;
 
       vertical-align: middle;
-      margin: .5rem;
+      margin-bottom: .2rem;
+      margin-left: .5rem;
     }
   }
 `;

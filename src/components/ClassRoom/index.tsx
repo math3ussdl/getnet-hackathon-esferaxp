@@ -10,7 +10,8 @@ interface ClassRoomProps {
 	topics?: string[];
 	image?: string;
 	video?: string;
-	description: string;
+  description: string;
+  linkTo: string;
 }
 
 const ClassRoom: React.FC<ClassRoomProps> = ({
@@ -20,7 +21,8 @@ const ClassRoom: React.FC<ClassRoomProps> = ({
 	image,
 	video,
 	description,
-	children,
+  children,
+  linkTo
 }) => {
 	return (
 		<Container>
@@ -51,7 +53,7 @@ const ClassRoom: React.FC<ClassRoomProps> = ({
 
 			{children}
 
-			<a className='next' href='#'>
+			<a className='next' href={linkTo}>
 				<img src={nextImg} alt='next button' />
 			</a>
 		</Container>

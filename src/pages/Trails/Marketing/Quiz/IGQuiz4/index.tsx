@@ -11,7 +11,9 @@ const IGQuiz4: React.FC = () => {
 			<IGQuiz
 				text='Agora só mais essa última...'
 				image={man}
-				question='Usar hashtags que estejam correlacionadas com o seu publico alvo é:'
+        question='Usar hashtags que estejam correlacionadas com o seu publico alvo é:'
+        linkTo='/xp/quiz/ig-quiz/success'
+        lsName='q4'
 			/>
 		</Container>
 	);

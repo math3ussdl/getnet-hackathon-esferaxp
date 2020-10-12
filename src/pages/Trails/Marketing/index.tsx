@@ -50,7 +50,7 @@ const Marketing: React.FC = () => {
 					title='Quiz de aprendizado!'
 					description='Vamos ver o que você aprendeu aqui!'
 					image={quizSign}
-					link='/xp/quiz/ig-quiz'
+					link='/xp/quiz/ig-quiz/1'
 				/>
 			</Trails>
 		</Container>

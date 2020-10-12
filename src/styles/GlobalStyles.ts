@@ -17,6 +17,11 @@ export default createGlobalStyle`
     font-family: 'Roboto', sans-serif;
   }
 
+  a, a:hover {
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
   :root {
     --color-background: #FFFFFF;
     --color-primary: #EC0000;

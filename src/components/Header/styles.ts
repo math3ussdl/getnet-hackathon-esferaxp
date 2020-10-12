@@ -46,4 +46,23 @@ export const Item = styled.a`
 		color: var(--color-primary);
 		cursor: pointer;
 	}
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 10rem;
+    font-size: 25px;
+
+    & + & {
+		  margin-left: 0;
+      margin-top: 5rem;
+	  }
+  }
+`;
+
+export const MobileMenu = styled.div`
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;

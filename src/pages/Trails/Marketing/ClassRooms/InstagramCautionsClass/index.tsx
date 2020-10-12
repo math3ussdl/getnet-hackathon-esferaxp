@@ -25,7 +25,8 @@ const InstagramCautionsClass: React.FC = () => {
           'Não faça spam em grupos do facebook.'
         ]}
 				image={instagramClass}
-				description='A seguir teremos um pequeno quiz para testar seu aprendizado!!'
+        description='A seguir teremos um pequeno quiz para testar seu aprendizado!!'
+        linkTo='/xp/quiz/ig-quiz/1'
 			/>
 		</Container>
 	);

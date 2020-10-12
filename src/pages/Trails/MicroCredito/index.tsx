@@ -43,7 +43,7 @@ const MicroCredito: React.FC = () => {
 					title='Quiz de aprendizado!'
 					description='Vamos ver o que você aprendeu aqui!'
 					image={quizSign}
-					link='#'
+					link='/xp/quiz/microcred-quiz/1'
 				/>
 			</Trails>
 		</Container>

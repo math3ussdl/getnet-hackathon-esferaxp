@@ -12,6 +12,8 @@ const IGQuiz3: React.FC = () => {
         text='Muito bem! Vamos ver o que acha dessa...'
         image={woman}
         question='Fazer spam em grupos de facebook é:'
+        linkTo='/xp/quiz/ig-quiz/4'
+        lsName='q3'
       />
     </Container>
   );

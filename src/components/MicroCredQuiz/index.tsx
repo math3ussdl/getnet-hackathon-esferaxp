@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 import { Container, Options, Item } from './styles';
 
@@ -7,7 +8,9 @@ interface MicroCredQuizProps {
 	image: string;
   question: string;
   options: string[];
-	showTitle?: boolean;
+  showTitle?: boolean;
+  linkTo: string;
+  lsName: string;
 }
 
 const MicroCredQuiz: React.FC<MicroCredQuizProps> = ({
@@ -15,8 +18,12 @@ const MicroCredQuiz: React.FC<MicroCredQuizProps> = ({
 	image,
   question,
   options,
-	showTitle = false,
+  showTitle = false,
+  linkTo,
+  lsName
 }) => {
+  const history = useHistory();
+
 	return (
 		<Container>
 			{showTitle && <h1>Quiz:</h1>}
@@ -31,7 +38,10 @@ const MicroCredQuiz: React.FC<MicroCredQuizProps> = ({
 
 			<Options>
         {options.map((opt) => (
-          <Item>
+          <Item onClick={() => {
+            localStorage.setItem(lsName, opt.charAt(0));
+            history.push(linkTo);
+          }}>
             {opt}
           </Item>
         ))}

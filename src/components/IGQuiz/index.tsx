@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { Button } from '@chakra-ui/core';
 
 import { Container, BtnBox } from './styles';
@@ -8,14 +9,20 @@ interface IGQuizProps {
   image: string;
   question: string;
   showTitle?: boolean;
+  linkTo: string;
+  lsName: string;
 }
 
 const IGQuiz: React.FC<IGQuizProps> = ({
   text,
   image,
   question,
-  showTitle = false
+  showTitle = false,
+  linkTo,
+  lsName
 }) => {
+  const history = useHistory();
+
   return (
     <Container>
       {showTitle && (
@@ -31,8 +38,15 @@ const IGQuiz: React.FC<IGQuizProps> = ({
       <p className='question'>{question}</p>
 
       <BtnBox>
-        <Button variantColor='red'>Errado</Button>
-        <Button variantColor='green'>Certo</Button>
+        <Button onClick={() => {
+          localStorage.setItem(lsName, 'Errado');
+          history.push(linkTo);
+        }} variantColor='red'>Errado</Button>
+
+        <Button onClick={() => {
+          localStorage.setItem(lsName, 'Certo');
+          history.push(linkTo);
+        }} variantColor='green'>Certo</Button>
       </BtnBox>
     </Container>
   );

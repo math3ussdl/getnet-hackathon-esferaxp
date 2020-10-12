@@ -4,22 +4,22 @@ export const Container = styled.header`
 	display: flex;
 	width: 100%;
 
-  justify-content: space-between;
+	justify-content: space-between;
 
 	padding: 2rem 0 0 2.5rem;
 `;
 
 export const Logo = styled.img`
-  width: 10rem;
-  
-  &:hover {
-    cursor: pointer;
-  }
+	width: 10rem;
+
+	&:hover {
+		cursor: pointer;
+	}
 `;
 
 export const Menu = styled.nav`
-  position: absolute;
-  left: 15rem;
+	position: absolute;
+	left: 15rem;
 
 	display: flex;
 
@@ -45,5 +45,24 @@ export const Item = styled.a`
 	&:hover {
 		color: var(--color-primary);
 		cursor: pointer;
+	}
+
+	@media screen and (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+
+		margin-top: 1rem;
+		font-size: 18px;
+
+		& + & {
+			margin-left: 0;
+			margin-top: 3.2rem;
+		}
+	}
+`;
+
+export const MobileMenu = styled.div`
+	@media screen and (min-width: 768px) {
+		display: none;
 	}
 `;

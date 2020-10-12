@@ -21,7 +21,8 @@ const InstagramClass: React.FC = () => {
 					'Para criar basta voce entrar no site do instagram(link aqui), se registar colocar o nome da sua loja, uma foto bonita do perfil e pronto! Seu negócio acaba de ser digitalizado!!',
 				]}
 				image={instagramClass}
-				description={`Clique no símbolo do instagram para ser redirecionado \n e passar essa fase:`}
+        description={`Clique no símbolo do instagram para ser redirecionado \n e passar essa fase:`}
+        linkTo='/xp/classes/instagram/cautions'
 			>
 				<a href='' target='_blank' rel='noopener noreferrer'>
 					<img src={instagramButton} alt='instagram' />

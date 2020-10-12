@@ -17,7 +17,9 @@ const MicroCredQuiz3: React.FC = () => {
 					'A. Não sei.',
 					'B. É possível.',
 					'C. Não,a maquininha serve apenas para receber dos clientes.',
-				]}
+        ]}
+        linkTo='/xp/quiz/microcred-quiz/success'
+        lsName='q3'
 			/>
 		</Container>
 	);
