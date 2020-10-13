@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Grid } from '@chakra-ui/core';
+import { Flex, Grid } from '@chakra-ui/core';
 
 import { Container } from './styles';
 
@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> = ({
 				<Grid templateRows='repeat(4, .5fr)'>
 					<Grid>
 						<figure>
-							<img src={image} alt='card image' />
+							<img src={image} alt='card' />
 						</figure>
 					</Grid>
 

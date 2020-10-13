@@ -24,7 +24,7 @@ const InstagramClass: React.FC = () => {
         description={`Clique no símbolo do instagram para ser redirecionado \n e passar essa fase:`}
         linkTo='/xp/classes/instagram/cautions'
 			>
-				<a href='' target='_blank' rel='noopener noreferrer'>
+				<a href='https://www.instagram.com/' target='_blank' rel='noopener noreferrer'>
 					<img src={instagramButton} alt='instagram' />
 				</a>
 

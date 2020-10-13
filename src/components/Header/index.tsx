@@ -37,9 +37,9 @@ const Header: React.FC = () => {
 			<Menu>
 				<Item href='/coming-soon'>RANKING</Item>
 
-				<Item href='/coming-soon'>TRILHAS</Item>
+				<Item href='/xp'>TRILHAS</Item>
 
-				<Item href='/coming-soon'>PRÊMIOS</Item>
+				<Item href='/gaming'>PRÊMIOS</Item>
 			</Menu>
 
 			<MobileMenu>
@@ -69,9 +69,9 @@ const Header: React.FC = () => {
 						<DrawerBody>
 							<Item href='/coming-soon'>RANKING</Item>
 
-							<Item href='/coming-soon'>TRILHAS</Item>
+							<Item href='/xp'>TRILHAS</Item>
 
-							<Item href='/coming-soon'>PRÊMIOS</Item>
+							<Item href='/gaming'>PRÊMIOS</Item>
 						</DrawerBody>
 					</DrawerContent>
 				</Drawer>

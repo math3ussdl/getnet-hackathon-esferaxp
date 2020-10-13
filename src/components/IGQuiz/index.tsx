@@ -32,7 +32,7 @@ const IGQuiz: React.FC<IGQuizProps> = ({
       <p>{text}</p>
 
       <figure>
-        <img src={image} alt='Image Question' />
+        <img src={image} alt='Question' />
       </figure>
 
       <p className='question'>{question}</p>

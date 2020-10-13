@@ -4,7 +4,6 @@ import { Button, Flex, Input } from '@chakra-ui/core';
 import HeaderMain from '../../components/HeaderMain';
 
 import { Container, Banner, CardSection, CashBackSection } from './styles';
-import { MdSubdirectoryArrowRight } from 'react-icons/md';
 
 import esferaapp from '../../assets/images/banner2.png';
 import Card from '../../components/Card';
@@ -88,7 +87,7 @@ const Home: React.FC = () => {
 
 				<Flex>
 					<FaMinus
-						color={count == 0 ? '#999999' : '#EC0000'}
+						color={count === 0 ? '#999999' : '#EC0000'}
 						onClick={
 							count >= 1
 								? countDecrement

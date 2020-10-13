@@ -18,6 +18,7 @@ import Home from './pages/Home';
 import SuccessIG from './pages/Trails/Marketing/Quiz/SuccessIG';
 import SuccessMicroCred from './pages/Trails/MicroCredito/Quiz/SuccessMicroCred';
 import ComingSoon from './pages/ComingSoon';
+import Gaming from './pages/Gaming';
 
 
 const Routes: React.FC = () => {
@@ -25,6 +26,7 @@ const Routes: React.FC = () => {
 		<Router>
 			<Switch>
         <Route exact path='/' component={Home} />
+        <Route path='/gaming' component={Gaming} />
 
 				<Route exact path='/xp' component={XPHome} />
         <Route path='/xp/trails/mkt-digital' component={MarketingTrail} />

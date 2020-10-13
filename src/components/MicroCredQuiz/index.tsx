@@ -31,7 +31,7 @@ const MicroCredQuiz: React.FC<MicroCredQuizProps> = ({
 			<p>{text}</p>
 
 			<figure>
-				<img src={image} alt='Image Question' />
+				<img src={image} alt='Question' />
 			</figure>
 
 			<p className='question'>{question}</p>
