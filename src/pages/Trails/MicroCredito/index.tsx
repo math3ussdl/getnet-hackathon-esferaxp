@@ -36,7 +36,7 @@ const MicroCredito: React.FC = () => {
 					title='O que é microcrédito?'
 					description='Como ele pode te ajudar a prosperar.'
 					image={moneyBag}
-					link='/classes/microcredito'
+					link='/xp/classes/microcredito'
 				/>
 
 				<Trail

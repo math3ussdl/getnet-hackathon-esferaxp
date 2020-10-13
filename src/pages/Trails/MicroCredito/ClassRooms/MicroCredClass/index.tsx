@@ -12,7 +12,7 @@ const MicroCredClass: React.FC = () => {
 
 			<ClassRoom
 				title='O que é microcrédito?'
-        video=''
+        video='https://www.youtube.com/watch?v=WsJ6j8MH5lc'
         description='Assista o vídeo acima para avançar!'
         linkTo='/xp/quiz/microcred-quiz/1'
 			/>

@@ -1,4 +1,5 @@
 import React from 'react';
+import YouTube from 'react-youtube';
 
 import { Container, ClassContent } from './styles';
 
@@ -10,19 +11,19 @@ interface ClassRoomProps {
 	topics?: string[];
 	image?: string;
 	video?: string;
-  description: string;
-  linkTo: string;
+	description: string;
+	linkTo: string;
 }
 
 const ClassRoom: React.FC<ClassRoomProps> = ({
 	title,
-  text,
-  topics,
+	text,
+	topics,
 	image,
 	video,
 	description,
-  children,
-  linkTo
+	children,
+	linkTo,
 }) => {
 	return (
 		<Container>
@@ -41,9 +42,16 @@ const ClassRoom: React.FC<ClassRoomProps> = ({
 				{image ? (
 					<img src={image} alt='Imagem da Aula' className='class-img' />
 				) : video ? (
-					<video width='450' height='245' controls>
-						<source src={video} type='video/mp4' />
-					</video>
+					<YouTube
+						videoId='WsJ6j8MH5lc'
+						opts={{
+							height: '390',
+							width: '640',
+							playerVars: {
+								autoplay: 1,
+							},
+						}}
+					/>
 				) : (
 					<p></p>
 				)}

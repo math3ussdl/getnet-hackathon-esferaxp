@@ -43,17 +43,17 @@ const IGQuiz1: React.FC = () => {
 					</AlertDialogBody>
 
 					<AlertDialogFooter>
-						<Button ref={cancelRef} onClick={onClose}>
-							Quero estudar Mais!
-						</Button>
 						<Button
-							variantColor='green'
+							style={{ marginRight: '.5rem' }}
 							onClick={() => {
 								history.push('/xp/trails/mkt-digital');
 								window.scrollTo(0, 0);
 							}}
 							ml={3}
 						>
+							Quero estudar Mais!
+						</Button>
+						<Button variantColor='green' ref={cancelRef} onClick={onClose}>
 							Estou!
 						</Button>
 					</AlertDialogFooter>

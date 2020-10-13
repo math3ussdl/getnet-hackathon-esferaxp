@@ -67,23 +67,9 @@ export const Banner = styled.div`
 
 	margin-top: 3rem;
 
-	> Button {
-		position: absolute;
-
-		bottom: 7rem;
-		right: 20.5rem;
-
-		color: var(--color-primary);
-		border: none;
-
-		> .icon {
-			margin-left: 1rem;
-		}
-
-		&:hover {
-			cursor: pointer;
-		}
-	}
+  &:hover {
+    cursor: pointer;
+  }
 
 	@media screen and (max-width: 768px) {
 		width: 100%;

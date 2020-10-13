@@ -2,6 +2,7 @@
   "name": "esferaxp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://math3ussdl.github.io/getnet-hackathon-esferaxp",
   "dependencies": {
     "@chakra-ui/core": "^0.8.0",
     "@emotion/core": "^10.0.35",
@@ -24,13 +25,16 @@
     "react-icons": "^3.11.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-youtube": "^7.12.0",
     "styled-components": "^5.2.0",
     "typescript": "~3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:dev": "node core/exec.js",
+    "start:dev": "BROWSER='google-chrome-stable' react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -29,17 +29,12 @@ const Home: React.FC = () => {
 		<Container>
 			<HeaderMain />
 
-			<Banner>
-				<Button
-					variant='link'
-					onClick={() => {
-						history.push('/xp');
-						window.scrollTo(0, 0);
-					}}
-				>
-					Vamos nessa! <MdSubdirectoryArrowRight className='icon' />
-				</Button>
-			</Banner>
+			<Banner
+				onClick={() => {
+					history.push('/xp');
+					window.scrollTo(0, 0);
+				}}
+			/>
 
 			<figure>
 				<img src={esferaapp} alt='esferaapp' />
